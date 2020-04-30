@@ -20,5 +20,5 @@ jobs:
         HUBSPOT_PORTAL_ID: 5677799
         HUBSPOT_API_KEY: ${{ secrets.HubSpotApiKey }}
       run: |
-        bin/generate-config.js
-        bin/deploy.sh
+        /bin/generate-config.js
+        /bin/deploy.sh
