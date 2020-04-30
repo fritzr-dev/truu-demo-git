@@ -12,6 +12,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 10.x
+    - name: Install NPM deps
+      run: |
+          npm install
     - name: Generate hubspot.config.yml and deploy
       env:
         HUBSPOT_PORTAL_ID: 5677799
